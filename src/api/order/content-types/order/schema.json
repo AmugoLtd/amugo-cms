@@ -4,8 +4,7 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "Order",
-    "description": ""
+    "displayName": "order"
   },
   "options": {
     "draftAndPublish": true
@@ -18,17 +17,20 @@
     "phone_number": {
       "type": "string"
     },
-    "delivery_instructions": {
-      "type": "text"
+    "email": {
+      "type": "string"
     },
-    "order_items": {
+    "delivery_instructions": {
       "type": "text"
     },
     "address": {
       "type": "text"
     },
+    "order_items": {
+      "type": "text"
+    },
     "total_price": {
-      "type": "decimal"
+      "type": "float"
     },
     "status": {
       "type": "enumeration",

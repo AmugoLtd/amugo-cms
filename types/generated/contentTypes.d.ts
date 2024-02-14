@@ -857,8 +857,7 @@ export interface ApiOrderOrder extends Schema.CollectionType {
   info: {
     singularName: 'order';
     pluralName: 'orders';
-    displayName: 'Order';
-    description: '';
+    displayName: 'order';
   };
   options: {
     draftAndPublish: true;
@@ -866,10 +865,11 @@ export interface ApiOrderOrder extends Schema.CollectionType {
   attributes: {
     order_id: Attribute.String;
     phone_number: Attribute.String;
+    email: Attribute.String;
     delivery_instructions: Attribute.Text;
-    order_items: Attribute.Text;
     address: Attribute.Text;
-    total_price: Attribute.Decimal;
+    order_items: Attribute.Text;
+    total_price: Attribute.Float;
     status: Attribute.Enumeration<
       ['order placed', 'preparing meal', 'on the road', 'delivered']
     >;
