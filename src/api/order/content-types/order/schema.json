@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "order"
+    "displayName": "order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -37,7 +38,7 @@
       "enum": [
         "order placed",
         "preparing meal",
-        "on the road",
+        "on the way",
         "delivered"
       ]
     }
